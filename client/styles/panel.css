@@ -3,22 +3,34 @@
   border: 1px solid black;
   border-radius: 4px;
   overflow: hidden;
-  background-color: whitesmoke;
+  background-color: var(--theme-off-white);
 }
 
 .panel-heading {
   padding: 10px 15px;
-  background-color: lightseagreen;
+  background-color: var(--theme-secondary);
   border-bottom: 1px solid black;
   flex: none;
 }
 
 .panel-footer {
-  padding: 10px;
   flex-grow: 1;
   border-top: 1px solid black;
-  background-color: lightseagreen;
+  background-color: var(--theme-secondary);
   flex: none;
+}
+
+.panel-footer .input-group > * {
+  border: 0;
+}
+
+.panel-footer .input-group > *:last-child {
+  border-right: 0;
+  border-top-right-radius: 0;
+}
+
+.panel-footer .input-group > *:first-child {
+  border-top-left-radius: 0;
 }
 
 .panel-body {

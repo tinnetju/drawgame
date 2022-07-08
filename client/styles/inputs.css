@@ -27,11 +27,20 @@
   overflow: hidden;
 }
 
+input {
+  padding: 5px;
+}
+
 button {
-  background-color: rgb(13, 88, 85);
+  background-color: var(--theme-primary);
   color: white;
   padding: 5px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--theme-secondary);
+  color:black;
 }
 
 nav > button {
